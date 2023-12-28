@@ -1,6 +1,6 @@
 # Nino-OS Discord Bot
 
-![IMAGE-LOGO](https://github.com/Nino-OS/home/blob/main/images/favico-32x32.png)
+![IMAGE-LOGO](https://github.com/Nino-OS/home/blob/main/images/favicon-32x32.png)
 
 ## Funktionen und MEHR ...
 

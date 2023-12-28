@@ -1,0 +1,524 @@
+/* support.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+    to top,
+    #3f51b5,
+    #9c27b0
+  ); /* Hintergrundverlauf von Blau zu Lila */
+  color: white; /* Textfarbe auf Weiß gesetzt */
+}
+
+header {
+  background: #3f51b545;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  background-color: #3f51b545;
+  padding: 0.5rem 0;
+  margin: 0;
+}
+
+nav ul li {
+  list-style: none;
+  margin-right: 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #9c27b0;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 0.2rem;
+}
+
+form button {
+  background: #3f51b5;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background: #303f9f;
+}
+
+footer {
+  text-align: center;
+  background: #303f9f;
+  color: white;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  border-top: 1px solid #9c27b0;
+}
+
+/* Formular im Dark Mode */
+body.dark-theme form label {
+  color: white; /* Farbe der Formularbeschriftungen im Dark Mode */
+}
+
+body.dark-theme form input,
+body.dark-theme form textarea {
+  background: #1a237e; /* Hintergrund der Formularfelder im Dark Mode */
+  color: white; /* Textfarbe der Formularfelder im Dark Mode */
+  border: 1px solid #6a1b9a; /* Randfarbe der Formularfelder im Dark Mode */
+}
+
+body.dark-theme form button {
+  background: #1a237e; /* Hintergrund des Buttons im Dark Mode */
+  color: white; /* Textfarbe des Buttons im Dark Mode */
+}
+
+body.dark-theme form button:hover {
+  background: #303f9f; /* Hintergrund des Buttons im Dark Mode beim Hovern */
+}
+
+/* Text im Dark Mode für den Abschnitt "Häufig gestellte Fragen (FAQ)" */
+body.dark-theme #section1 {
+  color: white; /* Ändern Sie die Textfarbe im Dark Mode auf Weiß */
+}
+
+/* Auswahl (Selection) im Dark Mode für Textbereiche (Textarea) im Abschnitt "Häufig gestellte Fragen (FAQ)" */
+body.dark-theme #section1 textarea::selection {
+  background: black; /* Hintergrundfarbe der Auswahl im Dark Mode */
+  color: white; /* Textfarbe der Auswahl im Dark Mode */
+}
+
+/* Text im Dark Mode für den Abschnitt "Häufig gestellte Fragen (FAQ)" */
+body.dark-theme #section1 {
+  color: white; /* Ändern Sie die Textfarbe im Dark Mode auf Weiß */
+  background: black; /* Ändern Sie den Hintergrund im Dark Mode auf Schwarz */
+}
+
+/* Auswahl (Selection) im Dark Mode für Textbereiche (Textarea) im Abschnitt "Häufig gestellte Fragen (FAQ)" */
+body.dark-theme #section1 textarea::selection {
+  background: black; /* Hintergrundfarbe der Auswahl im Dark Mode */
+  color: white; /* Textfarbe der Auswahl im Dark Mode */
+}
+
+/* Text im Dark Mode für den Abschnitt "Kontakt" */
+body.dark-theme #section2 {
+  color: white; /* Ändern Sie die Textfarbe im Dark Mode auf Weiß */
+  background: black; /* Ändern Sie den Hintergrund im Dark Mode auf Schwarz */
+}
+
+/* Auswahl (Selection) im Dark Mode für Textbereiche (Textarea) im Abschnitt "Kontakt" */
+body.dark-theme #section2 textarea::selection {
+  background: black; /* Hintergrundfarbe der Auswahl im Dark Mode */
+  color: white; /* Textfarbe der Auswahl im Dark Mode */
+}
+
+/* Text im Dark Mode für den Abschnitt "Willkommen beim Support" */
+body.dark-theme header {
+  color: white; /* Ändern Sie die Textfarbe im Dark Mode auf Weiß */
+}
+
+/* Auswahl (Selection) im Dark Mode für den Textbereich (Header) im Abschnitt "Willkommen beim Support" */
+body.dark-theme header::selection {
+  background: black; /* Hintergrundfarbe der Auswahl im Dark Mode */
+  color: white; /* Textfarbe der Auswahl im Dark Mode */
+}
+/* BUTTON*/
+
+/* BUTTON im Dark Mode */
+body.dark-theme .theme-toggle {
+  background: #000000; /* Hintergrundfarbe des Buttons im Dark Mode */
+  color: #ffffff; /* Textfarbe des Buttons im Dark Mode */
+}
+
+.theme-toggle {
+  border: none;
+  width: 80px;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  position: fixed;
+  right: 10px;
+  top: 40px;
+  transform: translateY(-50%);
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  font-size: 18px;
+  justify-content: space-between;
+}
+
+.theme-toggle.deactive {
+  background: #000000; /* Hintergrundfarbe im Dark Mode */
+  color: #ffffff; /* Textfarbe im Dark Mode */
+}
+
+.theme-toggle.active {
+  background: #ffffff; /* Hintergrundfarbe im Dark Mode */
+  color: #000000; /* Textfarbe im Dark Mode */
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  background: #fff;
+  padding: 30px;
+  border-radius: 30px;
+}
+.img-area {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  background: var(--grey);
+  margin-bottom: 30px;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.img-area .icon {
+  font-size: 100px;
+}
+.img-area h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+.img-area p {
+  color: #999;
+}
+.img-area p span {
+  font-weight: 600;
+}
+.img-area img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 100;
+}
+.img-area::before {
+  content: attr(data-img);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 200;
+}
+.img-area.active:hover::before {
+  opacity: 1;
+}
+
+/* ... (vorheriger CSS-Code) */
+
+/* BUTTON*/
+
+.theme-toggle {
+  border: none;
+  width: 80px;
+  height: 40px;
+  border-radius: 20px;
+  cursor: e-resize;
+  position: fixed;
+  right: 10px;
+  top: 40px;
+  transform: translateY(-50%);
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  font-size: 18px;
+  justify-content: space-between;
+}
+
+.theme-toggle.deactive {
+  background: #000000; /* Hintergrundfarbe im Dark Mode */
+  color: #ffffff; /* Textfarbe im Dark Mode */
+}
+
+.theme-toggle.active {
+  background: #ffffff; /* Hintergrundfarbe im Dark Mode */
+  color: #000000; /* Textfarbe im Dark Mode */
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  background: #0e598152;
+  padding: 30px;
+  border-radius: 30px;
+}
+.img-area {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  background: var(--grey);
+  margin-bottom: 30px;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.img-area .icon {
+  font-size: 100px;
+}
+.img-area h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+.img-area p {
+  color: #999;
+}
+.img-area p span {
+  font-weight: 600;
+}
+.img-area img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 100;
+}
+.img-area::before {
+  content: attr(data-img);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 200;
+}
+.img-area.active:hover::before {
+  opacity: 1;
+}
+.select-image {
+  display: block;
+  width: 100%;
+  padding: 16px 0;
+  border-radius: 15px;
+  background: #0e598152;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.select-image:hover {
+  background: var(--dark-blue);
+}
+
+.send-button {
+  display: block;
+  width: 100%;
+  padding: 16px 0;
+  border-radius: 15px;
+  background: #07ff5a;
+  color: #000000;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.send-button:hover {
+  cursor: alias;
+  background: rgba(0, 164, 98, 0.709);
+}
+
+body.dark-theme .send-button {
+  background: #03b544;
+  color: #ffffff; /* Textfarbe des Buttons im Dark Mode */
+}
+
+body.dark-theme .send-button:hover {
+  cursor: alias;
+  background: rgba(0, 164, 98, 0.709);
+  color: #ffffff; /* Textfarbe des Buttons im Dark Mode */
+}
+
+.main-site-back {
+  background: #ff2b2b;
+  color: #000000;
+  border: none;
+  width: 90px;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  position: fixed;
+  left: 10px;
+  top: 40px;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  font-size: 20px;
+  justify-content: space-between;
+}
+
+body.dark-theme .main-site-back {
+  background: #ab0000;
+  color: #ffffff; /* Textfarbe des Buttons im Dark Mode */
+}
+
+section {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: linear-gradient(to bottom, #fff, #f3f3f3);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #333;
+  cursor: text;
+}
+
+.FAQ:hover {
+  font-size: 20px;
+  color: #000000;
+  background-color: #6a1b9a;
+  cursor: copy;
+}
+
+.Kontakt:hover {
+  font-size: 20px;
+  color: #000000;
+  background-color: #6a1b9a;
+  cursor: copy;
+}
+
+.footer {
+  color: white;
+}
+
+.footer:hover {
+  background-color: rgba(0, 75, 251, 0.259);
+  color: black;
+}
+
+@media (width < 600px) {
+  .section {
+    display: none;
+  }
+
+  .section1 {
+    width: 300px;
+    font-size: 14px;
+  }
+
+  .section2 {
+    width: 300px;
+    font-size: 14px;
+  }
+
+  .title-size {
+    height: 28px;
+    font-size: 14px;
+  }
+
+  .main-site-back {
+    top: 26px;
+    width: 48px;
+    height: 28px;
+    font-size: 0;
+  }
+
+  .theme-toggle {
+    top: 26px;
+    width: 40px;
+    height: 30px;
+  }
+
+  .theme-toggle::before {
+    cursor: pointer;
+    content: "☀️"; /* Standard-Icon (Sonnensymbol) */
+    font-size: 16px;
+  }
+
+  body.dark-theme .theme-toggle::before {
+    cursor: pointer;
+    content: "🌙"; /* Icon im Dark Mode (Mondsymbol) */
+    font-size: 16px;
+  }
+}
+
+@media (width > 600px) {
+  .theme-toggle::before {
+    content: "☀️";
+    transition: transform 0.3s;
+  }
+
+  body.dark-theme .theme-toggle::before {
+    content: "🌙";
+    transform: translateX(40px);
+  }
+
+  .section1 {
+    width: 1200px;
+    font-size: 14px;
+  }
+
+  .section2 {
+    width: 1200px;
+    font-size: 14px;
+  }
+}

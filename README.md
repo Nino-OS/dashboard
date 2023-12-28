@@ -14,7 +14,7 @@
 
 ## Befehle
 
-\***\*ALLE BEFEHLE SIND UNTER; ➡ _[Command-Link]()_ ⬅ URL 🔗\*\***
+\***\*ALLE BEFEHLE SIND UNTER; ➡ _[Command-Link](https://nino-os.github.io/dashboard/commands/)_ ⬅ URL 🔗\*\***
 
 ## Einbindung des Bots
 

@@ -342,7 +342,7 @@ footer .column > a:hover {
   width: 320px;
   height: 400px;
   position: absolute;
-  right: 600px;
+  right: 540px;
   cursor: pointer;
 }
 
@@ -369,10 +369,13 @@ footer {
   }
 }
 
-@media (width < 900px) {
+@media (width < 1308px) {
   .left-image {
     display: none;
   }
+}
+
+@media (width < 900px) {
   .nav-logo {
     height: 80px;
     width: 80px;

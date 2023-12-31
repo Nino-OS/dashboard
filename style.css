@@ -322,19 +322,21 @@ footer .column .socials a:hover {
 footer .column h4 {
   color: #fff;
   margin-bottom: 2rem;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   font-weight: 500;
 }
 
 footer .column > a {
   display: block;
   color: #ccc;
+  font-size: 1.2rem;
   margin-bottom: 1rem;
   transition: all 0.3s ease;
 }
 
 footer .column > a:hover {
   color: #1d4ed8;
+  font-size: 1.6rem;
 }
 
 .left-image {

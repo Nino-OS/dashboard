@@ -365,6 +365,16 @@ footer {
   border-top: 1px solid #545454;
 }
 
+@media (width > 900px) {
+  footer .column h4 {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  footer .column > a:hover {
+    font-size: 1rem;
+  }
+}
+
 @media (width < 1200px) {
   .left-image {
     right: 100px;

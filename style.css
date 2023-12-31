@@ -322,7 +322,7 @@ footer .column .socials a:hover {
 footer .column h4 {
   color: #fff;
   margin-bottom: 2rem;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   font-weight: 500;
 }
 
@@ -336,7 +336,6 @@ footer .column > a {
 
 footer .column > a:hover {
   color: #1d4ed8;
-  font-size: 1.6rem;
 }
 
 .left-image {
@@ -367,11 +366,11 @@ footer {
 
 @media (width > 900px) {
   footer .column h4 {
-    font-size: 1.2rem;
-    font-weight: 400;
+    font-size: 1.8rem;
+    font-weight: 800;
   }
   footer .column > a:hover {
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 }
 

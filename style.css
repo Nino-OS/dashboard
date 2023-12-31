@@ -364,7 +364,7 @@ footer {
   border-top: 1px solid #545454;
 }
 
-@media (width > 900px) {
+@media (width < 900px) {
   footer .column h4 {
     font-size: 1.8rem;
     font-weight: 800;

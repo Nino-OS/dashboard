@@ -344,7 +344,7 @@ footer .column > a:hover {
   height: 400px;
   position: absolute;
   right: 540px;
-  cursor: none;
+  cursor: default;
 }
 
 .footer {

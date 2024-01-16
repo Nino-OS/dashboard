@@ -8,20 +8,20 @@
 
 - Und der **Nino-OS** BOT hat natürlich ein _Bann_, _Unbann_, _Kick_ und **c.o.** systeme und vieles mehr **...**
 
-- Der **Nino-OS** BOT dint auch mit _Allgemeinen Commands_, _ADMIN-Commands_, _Moderations-Commands_ und _Prifx-Commands_. 🛠
+- Der **Nino-OS** BOT dient auch mit _Allgemeinen Commands_, _ADMIN-Commands_, _Moderations-Commands_ und _Prifx-Commands_. 🛠
 
 - Und es werden andere commands in Kürze hinzu kommen **...** 🔜
 
 ## Befehle
 
-**ALLE BEFEHLE SIND UNTER; ➡ _[Command-Link](https://nino-os.github.io/dashboard/commands/)_ ⬅ URL 🔗**
+**ALLE BEFEHLE SIND UNTER; ➡ _[Command-Link](https://nino-os.github.io/commands/)_ ⬅ URL 🔗**
 
 # The Pach-Nots (Buggs)
 
 | BUGGS        | FIXT |
 | ------------ | ---- |
-| Music-System | :x:  |
-| Google-AI    | :x:  |
+| Music-System | ✅   |
+| Google-AI    | 🔄   |
 
 ## Einbindung des Bots
 

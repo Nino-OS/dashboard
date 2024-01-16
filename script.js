@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   link2.addEventListener("click", (event) => {
     event.preventDefault();
-    scrollToElement(".header", 1);
+    scrollToElement(".sub-header");
   });
 
   link3.addEventListener("click", (event) => {

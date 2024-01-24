@@ -8,6 +8,87 @@
   box-sizing: border-box;
 }
 
+.loading-footer {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: grid;
+  grid-template-columns: 400px repeat(3, 1fr);
+  gap: 2rem;
+  text-align: center;
+  color: white;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+.loading-text-big {
+  text-align: center;
+  position: fixed;
+  font-size: 40px;
+  top: 26%;
+  left: 55%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.loading-text-smal {
+  text-align: center;
+  position: fixed;
+  font-size: 56px;
+  top: 38%;
+  left: 58%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.load-logo {
+  position: fixed;
+  top: 24%;
+  left: 30%;
+  max-width: 180px;
+}
+
+.progress-container {
+  position: fixed;
+  top: 54%;
+  left: 12%;
+  right: 12%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 12px;
+  background-color: #ddd;
+  margin-bottom: 20px;
+  border-radius: 400px;
+}
+
+.right {
+  flex-grow: 1;
+  height: 100%;
+  background-color: #ddd;
+  border-radius: 200px;
+}
+
+.progress-bar-container {
+  width: 50%;
+  overflow: hidden;
+  border-radius: 200px;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0;
+  background-color: #3498db;
+  transition: width 3.2s ease;
+  border-radius: 200px;
+}
+
+.content {
+  text-align: center;
+}
+
 img {
   width: 100%;
   display: flex;
@@ -384,6 +465,33 @@ footer {
   .left-image {
     display: none;
   }
+
+  .loading-text-big {
+    text-align: center;
+    position: fixed;
+    font-size: 32px;
+    top: 26%;
+    left: 55%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+
+  .loading-text-smal {
+    text-align: center;
+    position: fixed;
+    font-size: 30px;
+    top: 38%;
+    left: 60%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+
+  .load-logo {
+    position: fixed;
+    top: 24%;
+    left: 30%;
+    max-width: 140px;
+  }
 }
 
 @media (width < 900px) {
@@ -413,6 +521,38 @@ footer {
 }
 
 @media (width < 600px) {
+  .loading-footer {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .loading-text-big {
+    text-align: center;
+    position: fixed;
+    font-size: 14px;
+    top: 44%;
+    left: 60%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+
+  .loading-text-smal {
+    text-align: center;
+    position: fixed;
+    font-size: 16px;
+    top: 48%;
+    left: 64%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+
+  .load-logo {
+    position: fixed;
+    top: 40%;
+    left: 24%;
+    max-width: 60px;
+  }
+
   .btn {
     right: 20px;
     height: 60px;
@@ -444,7 +584,6 @@ footer {
   }
 }
 
-/* Fügt einige gruselige Effekte hinzu, die zu Halloween passen */
 .blur {
   background: radial-gradient(circle, transparent, #000 80%);
   animation: blur 10s infinite;

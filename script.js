@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
-  /*/setTimeout(function () {
+  setTimeout(function () {
     document.querySelector(".all-load").style.display = "none";
     document.querySelector(".loading-footer").style.display = "none";
     document.querySelector(".all").style.display = "block";
-  }, 4000);/*/
+  }, 4000);
 
   startProgressBarAnimation();
 });

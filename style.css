@@ -31,7 +31,7 @@
   z-index: 1;
 }
 
-.loading-text-smal {
+.loading-text-small {
   text-align: center;
   position: fixed;
   font-size: 56px;
@@ -603,4 +603,38 @@ footer {
   100% {
     transform: scale(1);
   }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn ease 0.5s forwards; /* Add forwards here */
+  -webkit-animation: fadeIn ease 0.5s forwards;
+  -moz-animation: fadeIn ease 0.5s forwards;
+  -o-animation: fadeIn ease 0.5s forwards;
+  -ms-animation: fadeIn ease 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
 }

@@ -1,14 +1,14 @@
-document.addEventListener("DOMContentLoaded", function () {
-  setTimeout(function () {
+document.addEventListener("DOMContentLoaded", async function () {
+  await startProgressBarAnimation();
+  setTimeout(() => {
     document.querySelector(".all-load").style.display = "none";
     document.querySelector(".loading-footer").style.display = "none";
     document.querySelector(".all").style.display = "block";
+    document.body.classList.add("fade-in");
   }, 4000);
-
-  startProgressBarAnimation();
 });
 
-function startProgressBarAnimation() {
+async function startProgressBarAnimation() {
   document.querySelector(".progress-bar").style.width = "100%";
 }
 

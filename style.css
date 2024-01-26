@@ -512,7 +512,7 @@ footer {
   }
 }
 
-@media (width < 700px) {
+@media screen and (max-width: 767px) {
   .loading-footer {
     grid-template-columns: 400px;
     padding: 1rem 0;

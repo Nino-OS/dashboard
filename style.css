@@ -22,12 +22,14 @@
 }
 
 .loading-text-big {
+  color: #000000;
   text-align: center;
   position: fixed;
   font-size: 40px;
   top: 32%;
   left: 55%;
   transform: translateX(-50%);
+  -webkit-text-stroke: 2px #fff;
   z-index: 1;
 }
 
@@ -38,7 +40,13 @@
   top: 42%;
   left: 58%;
   transform: translateX(-50%);
+  color: #fff;
   z-index: 1;
+}
+
+.loading-text-small span {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #fff;
 }
 
 .load-logo {
@@ -541,7 +549,7 @@ footer {
 
   .load-logo {
     position: fixed;
-    top: 41%;
+    top: 43%;
     left: 24%;
     max-width: 60px;
   }
@@ -550,8 +558,15 @@ footer {
     right: 20px;
     height: 60px;
     width: 120px;
-    font-size: 12px;
+    font-size: 1rem;
     size: 80px;
+  }
+
+  #cmd-text {
+    right: 20px;
+    width: 160px;
+    size: 80px;
+    font-size: 14px;
   }
 
   .nav-logo {
@@ -905,7 +920,7 @@ footer {
   height: 3px;
   background: transparent;
   box-shadow: 387px 1878px #fff, 760px 1564px #fff, 1487px 999px #fff,
-    948px 1828px #fff, 1977px 1001px #fff, 1284px 1963px #fff, 656px 284px #fff,
+    948px 1828px #fff, 1977px 1001px #fff, 1284px 1963px #fff,
     1268px 1635px #fff, 1820px 598px #fff, 642px 1900px #fff, 296px 57px #fff,
     921px 1620px #fff, 476px 1858px #fff, 658px 613px #fff, 1171px 1363px #fff,
     1419px 283px #fff, 1037px 731px #fff, 503px 663px #fff, 1562px 463px #fff,
